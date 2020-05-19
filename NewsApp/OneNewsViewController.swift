@@ -14,6 +14,7 @@ class OneNewsViewController: UIViewController {
     var index: Int = 0
     var article: Article!
     
+    @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -47,6 +48,10 @@ class OneNewsViewController: UIViewController {
             buttonBrowser.isEnabled = true
             buttonBrowser.backgroundColor = UIColor.gray
         }
+    }
+    
+    func lottieAnimation() {
+        let animationview = animationView(name: )
     }
     
 }

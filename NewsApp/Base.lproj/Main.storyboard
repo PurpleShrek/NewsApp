@@ -123,10 +123,19 @@
                                     <action selector="buttonBrowserPressed:" destination="Ehh-yl-xVU" eventType="touchUpInside" id="eTX-TX-BQT"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOr-cS-gfe" customClass="AnimationView">
+                                <rect key="frame" x="147.66666666666666" y="302" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="g2S-My-LPO"/>
+                                    <constraint firstAttribute="height" constant="80" id="yGS-y6-w6f"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="1ni-PN-eLf" firstAttribute="trailing" secondItem="LEw-AC-7Se" secondAttribute="trailing" constant="16" id="BOu-l4-LF4"/>
+                            <constraint firstItem="NOr-cS-gfe" firstAttribute="centerX" secondItem="8hx-WM-xMq" secondAttribute="centerX" id="Eyo-Og-NKw"/>
                             <constraint firstItem="1ni-PN-eLf" firstAttribute="trailing" secondItem="7dV-lK-fqi" secondAttribute="trailing" constant="16" id="HPc-lb-JbJ"/>
                             <constraint firstItem="LEw-AC-7Se" firstAttribute="top" secondItem="7dV-lK-fqi" secondAttribute="bottom" constant="5" id="NVR-FN-bTI"/>
                             <constraint firstItem="ScN-tY-YPx" firstAttribute="trailing" secondItem="1ni-PN-eLf" secondAttribute="trailing" id="OAf-K1-hwP"/>
@@ -134,6 +143,7 @@
                             <constraint firstItem="89C-2d-kfL" firstAttribute="leading" secondItem="1ni-PN-eLf" secondAttribute="leading" constant="30" id="dgf-m9-Zsh"/>
                             <constraint firstItem="ScN-tY-YPx" firstAttribute="top" secondItem="1ni-PN-eLf" secondAttribute="top" id="ghL-fK-vfO"/>
                             <constraint firstItem="89C-2d-kfL" firstAttribute="top" secondItem="ScN-tY-YPx" secondAttribute="bottom" constant="20" id="hHu-6W-1qK"/>
+                            <constraint firstItem="NOr-cS-gfe" firstAttribute="top" secondItem="ScN-tY-YPx" secondAttribute="bottom" constant="2" id="iEO-MD-b9c"/>
                             <constraint firstItem="kSG-NK-Iv9" firstAttribute="centerY" secondItem="ScN-tY-YPx" secondAttribute="centerY" id="qjx-OT-vG3"/>
                             <constraint firstItem="7dV-lK-fqi" firstAttribute="leading" secondItem="1ni-PN-eLf" secondAttribute="leading" constant="16" id="u2g-Zy-1IW"/>
                             <constraint firstItem="1ni-PN-eLf" firstAttribute="trailing" secondItem="89C-2d-kfL" secondAttribute="trailing" constant="30" id="uyK-q4-FWT"/>
@@ -146,6 +156,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="e76-MJ-43k"/>
                     <connections>
+                        <outlet property="animationView" destination="NOr-cS-gfe" id="EfR-EE-OF8"/>
                         <outlet property="buttonBrowser" destination="LEw-AC-7Se" id="vVf-ga-uol"/>
                         <outlet property="descriptionLabel" destination="7dV-lK-fqi" id="6lM-8L-oPq"/>
                         <outlet property="imageActivityIndicator" destination="kSG-NK-Iv9" id="lo4-lT-o3q"/>
