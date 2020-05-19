@@ -53,7 +53,7 @@ class OneNewsViewController: UIViewController {
     }
     
     func lottieAnimation() {
-        let animationViewConst = AnimationView(name: "animate_icon")
+        let animationViewConst = AnimationView(name: "download_icon")
         animationViewConst.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
         animationViewConst.center = self.view.center
         animationViewConst.contentMode = .scaleAspectFit

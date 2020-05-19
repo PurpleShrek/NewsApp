@@ -20,11 +20,21 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESK-wt-kzT" customClass="AnimationView">
+                    <rect key="frame" x="152.66666666666666" y="4.6666666666666643" width="70" height="70"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="9FO-r3-qqx"/>
+                        <constraint firstAttribute="width" constant="70" id="fov-Sz-GxS"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Dfo-jz-iKA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DCX-oe-tkE"/>
                 <constraint firstItem="Dfo-jz-iKA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aNU-bX-BYi"/>
+                <constraint firstItem="ESK-wt-kzT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jKI-bd-Ehz"/>
+                <constraint firstItem="ESK-wt-kzT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wJa-FJ-XfK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

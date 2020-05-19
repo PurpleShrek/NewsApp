@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 
 class TableViewController: UITableViewController {
@@ -51,9 +52,20 @@ class TableViewController: UITableViewController {
         let refreshView = myRefreshControl.viewWithTag(2020)
         
         for vw in (refreshView?.subviews)! {
-                if let titleLablel = vw as? UILabel {
-                    titleLablel.text = "Refreshing contents"
-                }
+            if let view = vw as? AnimationView {
+                func lottieAnimation() {
+                let animationViewConst = AnimationView(name: "download_icon")
+                animationViewConst.frame = CGRect(x: 0, y: 0, width: 70, height: 70)
+                animationViewConst.center = self.view.center
+                animationViewConst.contentMode = .scaleAspectFit
+                view.addSubview(animationViewConst)
+                animationViewConst.play()
+                animationViewConst.loopMode = .loop
+            }
+            }
+//                if let titleLablel = vw as? UILabel {
+//                    titleLablel.text = "Refreshing contents"
+//                }
         }
         self.perform(#selector(finishedRefreshing), with: nil, afterDelay: 0)
     }
