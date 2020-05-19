@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		240799A4247368C5002C3701 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 240799A3247368C5002C3701 /* Lottie */; };
 		2450004524736B3F000CFD10 /* animate_icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 2450004424736B3F000CFD10 /* animate_icon.json */; };
+		2450004724736D2E000CFD10 /* Check-animated-illustration.json in Resources */ = {isa = PBXBuildFile; fileRef = 2450004624736D2E000CFD10 /* Check-animated-illustration.json */; };
 		249B8E44247354C700CC8281 /* CustomRefresh.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B8E43247354C700CC8281 /* CustomRefresh.xib */; };
 		249C58C4246F68CF00A9A700 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249C58C3246F68CF00A9A700 /* PageViewController.swift */; };
 		24BEE12E246E0888007A6788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEE12D246E0888007A6788 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		2450004424736B3F000CFD10 /* animate_icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animate_icon.json; sourceTree = "<group>"; };
+		2450004624736D2E000CFD10 /* Check-animated-illustration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Check-animated-illustration.json"; path = "../../../../../Downloads/Learn how to add Lottie animations in SWIFT/check/check/Check-animated-illustration.json"; sourceTree = "<group>"; };
 		249B8E43247354C700CC8281 /* CustomRefresh.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomRefresh.xib; sourceTree = "<group>"; };
 		249C58C3246F68CF00A9A700 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		24BEE12A246E0888007A6788 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				24BEE146246E4D5E007A6788 /* TableViewController.swift */,
 				249B8E43247354C700CC8281 /* CustomRefresh.xib */,
 				2450004424736B3F000CFD10 /* animate_icon.json */,
+				2450004624736D2E000CFD10 /* Check-animated-illustration.json */,
 				24BEE133246E0888007A6788 /* Main.storyboard */,
 				24BEE136246E0890007A6788 /* Assets.xcassets */,
 				24BEE138246E0890007A6788 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2450004724736D2E000CFD10 /* Check-animated-illustration.json in Resources */,
 				249B8E44247354C700CC8281 /* CustomRefresh.xib in Resources */,
 				24BEE13A246E0890007A6788 /* LaunchScreen.storyboard in Resources */,
 				24BEE137246E0890007A6788 /* Assets.xcassets in Resources */,

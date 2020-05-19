@@ -49,10 +49,20 @@ class OneNewsViewController: UIViewController {
             buttonBrowser.isEnabled = true
             buttonBrowser.backgroundColor = UIColor.gray
         }
+        lottieAnimation()
     }
     
     func lottieAnimation() {
-        let animationview = animationView(name:  )
+        let animationViewConst = AnimationView(name: "animate_icon")
+        animationViewConst.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
+        animationViewConst.center = self.view.center
+        animationViewConst.contentMode = .scaleAspectFit
+        view.addSubview(animationViewConst)
+        animationViewConst.play()
+        animationViewConst.loopMode = .loop
+        
+        
+        
     }
     
 }
