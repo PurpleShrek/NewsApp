@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+import Lottie
 
 class OneNewsViewController: UIViewController {
     
@@ -51,7 +52,7 @@ class OneNewsViewController: UIViewController {
     }
     
     func lottieAnimation() {
-        let animationview = animationView(name: )
+        let animationview = animationView(name:  )
     }
     
 }
