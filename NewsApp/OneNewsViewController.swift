@@ -8,14 +8,12 @@
 
 import UIKit
 import SafariServices
-import Lottie
 
 class OneNewsViewController: UIViewController {
     
     var index: Int = 0
     var article: Article!
     
-    @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -33,7 +31,6 @@ class OneNewsViewController: UIViewController {
         buttonBrowser.layer.cornerRadius = 12
         titleLabel.text = article.title
         descriptionLabel.text = article.description
-        
         // DispatchQueue.global(qos: .default).async {
         DispatchQueue.main.async {
             if self.article.urlToImage != "" {
@@ -49,20 +46,5 @@ class OneNewsViewController: UIViewController {
             buttonBrowser.isEnabled = true
             buttonBrowser.backgroundColor = UIColor.gray
         }
-        lottieAnimation()
     }
-    
-    func lottieAnimation() {
-        let animationViewConst = AnimationView(name: "download_icon")
-        animationViewConst.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
-        animationViewConst.center = self.view.center
-        animationViewConst.contentMode = .scaleAspectFit
-        view.addSubview(animationViewConst)
-        animationViewConst.play()
-        animationViewConst.loopMode = .loop
-        
-        
-        
-    }
-    
 }

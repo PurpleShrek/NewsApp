@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import Lottie
-
 
 class TableViewController: UITableViewController {
     
     let myRefreshControl = UIRefreshControl()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -25,13 +23,13 @@ class TableViewController: UITableViewController {
             DispatchQueue.main.async {
                 //старый рефреш контрол
                 self.addRefreshControl()
+                self.myRefreshControl.beginRefreshing()
                 self.tableView.reloadData()
                 self.finishedRefreshing()
             }
         }
     }
-    
-  // MARK: - Refresh control settings
+    // MARK: - Refresh control settings
     func addRefreshControl() {
         guard let customView = Bundle.main.loadNibNamed("CustomRefresh", owner: nil, options: nil) else { return }
         guard let refreshView = customView[0] as? UIView else { return }
@@ -52,24 +50,13 @@ class TableViewController: UITableViewController {
         let refreshView = myRefreshControl.viewWithTag(2020)
         
         for vw in (refreshView?.subviews)! {
-            if let view = vw as? AnimationView {
-                func lottieAnimation() {
-                let animationViewConst = AnimationView(name: "download_icon")
-                animationViewConst.frame = CGRect(x: 0, y: 0, width: 70, height: 70)
-                animationViewConst.center = self.view.center
-                animationViewConst.contentMode = .scaleAspectFit
-                view.addSubview(animationViewConst)
-                animationViewConst.play()
-                animationViewConst.loopMode = .loop
+            if let titleLablel = vw as? UILabel {
+                titleLablel.text = "Refreshing contents"
             }
-            }
-//                if let titleLablel = vw as? UILabel {
-//                    titleLablel.text = "Refreshing contents"
-//                }
         }
         self.perform(#selector(finishedRefreshing), with: nil, afterDelay: 0)
     }
-    
+    // мне не нравится, что в конце еще раз показывается надпись из функции finishedRefreshing. Пробывал дебажить, но знаний пока не хватает(20.05.20)
     @objc func finishedRefreshing() {
         myRefreshControl.endRefreshing()
         let refreshView = myRefreshControl.viewWithTag(2020)

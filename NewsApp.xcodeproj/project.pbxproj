@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		240799A4247368C5002C3701 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 240799A3247368C5002C3701 /* Lottie */; };
-		2450004924736EB0000CFD10 /* download_icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 2450004824736EB0000CFD10 /* download_icon.json */; };
 		249B8E44247354C700CC8281 /* CustomRefresh.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B8E43247354C700CC8281 /* CustomRefresh.xib */; };
 		249C58C4246F68CF00A9A700 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249C58C3246F68CF00A9A700 /* PageViewController.swift */; };
 		24BEE12E246E0888007A6788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEE12D246E0888007A6788 /* AppDelegate.swift */; };
@@ -23,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2450004824736EB0000CFD10 /* download_icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = download_icon.json; path = ../../../../../Downloads/download_icon.json; sourceTree = "<group>"; };
 		249B8E43247354C700CC8281 /* CustomRefresh.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomRefresh.xib; sourceTree = "<group>"; };
 		249C58C3246F68CF00A9A700 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		24BEE12A246E0888007A6788 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				240799A4247368C5002C3701 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +73,6 @@
 				24BEE148246E5CEF007A6788 /* OneNewsViewController.swift */,
 				24BEE146246E4D5E007A6788 /* TableViewController.swift */,
 				249B8E43247354C700CC8281 /* CustomRefresh.xib */,
-				2450004824736EB0000CFD10 /* download_icon.json */,
 				24BEE133246E0888007A6788 /* Main.storyboard */,
 				24BEE136246E0890007A6788 /* Assets.xcassets */,
 				24BEE138246E0890007A6788 /* LaunchScreen.storyboard */,
@@ -112,7 +107,6 @@
 			);
 			name = NewsApp;
 			packageProductDependencies = (
-				240799A3247368C5002C3701 /* Lottie */,
 			);
 			productName = NewsApp;
 			productReference = 24BEE12A246E0888007A6788 /* NewsApp.app */;
@@ -143,7 +137,6 @@
 			);
 			mainGroup = 24BEE121246E0888007A6788;
 			packageReferences = (
-				240799A2247368C5002C3701 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 24BEE12B246E0888007A6788 /* Products */;
 			projectDirPath = "";
@@ -160,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				249B8E44247354C700CC8281 /* CustomRefresh.xib in Resources */,
-				2450004924736EB0000CFD10 /* download_icon.json in Resources */,
 				24BEE13A246E0890007A6788 /* LaunchScreen.storyboard in Resources */,
 				24BEE137246E0890007A6788 /* Assets.xcassets in Resources */,
 				24BEE135246E0888007A6788 /* Main.storyboard in Resources */,
@@ -386,25 +378,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		240799A2247368C5002C3701 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.8;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		240799A3247368C5002C3701 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 240799A2247368C5002C3701 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24BEE122246E0888007A6788 /* Project object */;
 }
